@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color:#1ABC9C;
+    --secondary-color: #2C3E50;
+    --trd--color:#172029;
+}
+.bg-main-color{
+    background-color: var(--main-color) !important;
+}
+.bg-secondary-color{
+    background-color: var(--secondary-color) !important;
+}
+.bg-trd-color{
+    background-color: var(--trd--color) !important;
+}
+.text-trd-color {
+    color: var(--trd--color) !important;
+}
+.w-30{
+    width: 30% !important;
+}
+.w-48{
+    width: 48% !important;
+}
+.w-60{
+    width: 60% !important;
+}
+.text-main{
+    color: var(--main-color) !important;
+}
+#star {
+    position: relative;
+    color: #fff;
+}
+
+#star::after {
+    content: "";
+    position: absolute;
+    right: 150%;
+    top: 50%;
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
+}
+
+#star::before {
+    content: "";
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
+}
+.main{
+    min-height: calc(100vh - 7rem);
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------- media query-----------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/* Large desktop */
+@media (min-width: 1200px) {
+    
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .w-r-90 {
+        width: 90% !important;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .w-r-100 {
+        width: 100% !important;
+    }
+    .mb-r-2 {
+        margin-bottom: 40px !important;
+    }
+    .w-r-90 {
+        width: 90% !important;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .w-r-100{
+        width: 100% !important;
+    }
+    .mb-r-2{
+        margin-bottom: 40px !important;
+    }
+    .w-r-90{
+        width: 90% !important;
+    }
+}

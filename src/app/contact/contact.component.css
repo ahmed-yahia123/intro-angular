@@ -1,0 +1,32 @@
+#star {
+    color: var(--trd--color);
+}
+#star::after{
+    background-color: var(--trd--color);
+}
+#star::before{
+    background-color: var(--trd--color);
+}
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: all 0.6s;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label{
+    top: 0;
+    color: var(--main-color);
+    font-size: 14px;
+}
